@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: red;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    background-image: linear-gradient(rgba(62, 20, 20, .4, rgba(62, 20, 20, .4)), url(black.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: lato;
+    position: relative;
+    height: 100vh;
+    color: #555555;
+}
+
+wrapper {
+    width: 1000px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
