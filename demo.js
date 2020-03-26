@@ -36,6 +36,12 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
     scores[activePlayer] += roundscore
     document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer]
         //next player
+
+    if (scores[activePlayer] >= 20) {
+        document.querySelector('#name-' + activePlayer).textContent = '--WINNER!--';
+        document.querySelector('.player-' + activePlayer + '-panel').classList.toggle('winner')
+
+    }
     nextPlayer()
 })
 
