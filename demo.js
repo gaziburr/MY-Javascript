@@ -1,4 +1,4 @@
-var scores, roundscore, activescore,
+var scores, roundscore,
     scores = [0, 0]
 roundscore = 0;
 activePlayer = 0;
@@ -37,7 +37,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
     document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer]
         //next player
 
-    if (scores[activePlayer] >= 20) {
+    if (scores[activePlayer] >= 100) {
         document.querySelector('#name-' + activePlayer).textContent = '--WINNER!--';
         document.querySelector('.player-' + activePlayer + '-panel').classList.toggle('winner')
 

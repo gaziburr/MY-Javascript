@@ -58,6 +58,12 @@
                 position: relative;
             }
             
+            .control {
+                position: absolute;
+                top: 90%;
+                left: 40%;
+            }
+            
             .player-score {
                 text-align: center;
                 font-size: 80px;
