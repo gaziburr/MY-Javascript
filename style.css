@@ -143,6 +143,10 @@
                 font-size: 200%;
             }
             
+            .init2 {
+                color: red;
+            }
+            
             button:focus {
                 outline: none
             }
@@ -184,6 +188,10 @@
                 border: 5px solid blue;
                 border-radius: 30%;
                 color: yellow;
+            }
+            
+            .init {
+                font-weight: bold;
             }
             
             .winner .player-name {
