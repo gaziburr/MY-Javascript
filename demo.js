@@ -1,4 +1,4 @@
-var scores, roundscore, gameplaying, activePlayer
+var scores, roundscore, gameplaying, activePlayer, lastdice
 init()
 document.querySelector('.btn-roll').addEventListener('click', function() {
     //1. Random number...
@@ -20,20 +20,22 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
             //next player
             nextPlayer()
         }
+        lastdice = dice
     }
 
 
 
 })
-if (gameplaying) {
-    document.querySelector('.btn-hold').addEventListener('click', function() {
 
+document.querySelector('.btn-hold').addEventListener('click', function() {
+
+    if (gameplaying) {
 
         scores[activePlayer] += roundscore
         document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer]
             //next player
 
-        if (scores[activePlayer] >= 200) {
+        if (scores[activePlayer] >= 20) {
             document.querySelector('#name-' + activePlayer).textContent = '--WINNER!--';
             document.querySelector('.player-' + activePlayer + '-panel').classList.toggle('winner')
             document.querySelector('.dice').style.display = 'none'
@@ -41,8 +43,9 @@ if (gameplaying) {
 
         }
         nextPlayer()
-    })
-}
+    }
+})
+
 document.querySelector('.btn-new').addEventListener('click', init)
 
 
