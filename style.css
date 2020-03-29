@@ -41,6 +41,16 @@
             }
             /* players */
             
+            .final-score {
+                position: absolute;
+                padding: 10px;
+                font-size: 20px;
+                font-weight: bold;
+                width: 200px;
+                transform: translateX(-300%);
+                text-align: center;
+            }
+            
             .player-1-panel {
                 width: 500px;
                 float: left;
@@ -174,10 +184,19 @@
                 top: 467px;
             }
             
-            .dice {
+            #dice1 {
                 position: absolute;
                 left: 50%;
-                top: 178px;
+                top: 250px;
+                transform: translateX(-50%);
+                height: 100px;
+                box-shadow: 5px 10px 18px blue;
+            }
+            
+            #dice2 {
+                position: absolute;
+                left: 50%;
+                top: 120px;
                 transform: translateX(-50%);
                 height: 100px;
                 box-shadow: 5px 10px 18px blue;
