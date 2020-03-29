@@ -28,6 +28,7 @@ console.log(stringTwo.search('end'));
 // slice()
 console.log(stringTwo.slice(2, 4));
 // split()
+// hellow how are you mr gazibur rahman
 console.log(stringOne.split(' '));
 // substr()
 console.log(stringTwo.substr(2, 4));

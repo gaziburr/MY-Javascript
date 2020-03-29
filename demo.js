@@ -10,8 +10,8 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         // 2.display the result
         document.querySelector('#dice1').style.display = 'block';
         document.querySelector('#dice2').style.display = 'block';
-        document.querySelector('#dice1').src = 'dice-' + dice1 + '.JPG'
-        document.querySelector('#dice2').src = 'dice-' + dice2 + '.JPG'
+        document.querySelector('#dice1').src = 'IMAGES/dice-' + dice1 + '.JPG'
+        document.querySelector('#dice2').src = 'IMAGES/dice-' + dice2 + '.JPG'
 
         if (dice1 === 6 && dice2 === 6) {
             roundscore += 0
