@@ -12,9 +12,10 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         document.querySelector('#dice2').style.display = 'block';
         document.querySelector('#dice1').src = 'IMAGES/dice-' + dice1 + '.JPG'
         document.querySelector('#dice2').src = 'IMAGES/dice-' + dice2 + '.JPG'
-
+            //Update the round score IF the rolled number was NOt a 6
         if (dice1 === 6 && dice2 === 6) {
             roundscore += 0
+                //player loses score
             scores[activePlayer] = 0
             document.querySelector('#score-' + activePlayer).textContent = 0;
             nextPlayer()
@@ -35,11 +36,14 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
 
     if (gameplaying) {
         // Update the UI
+        //Add the CURRENT to Global score
         scores[activePlayer] += roundscore
         document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer]
             //next player
         var input = document.querySelector('.final-score').value;
         var winningscore;
+        //Undefined,null ,0 and "" are coarced to false
+        //Anything else is coarced to true.
         if (input) {
             winningscore = input
         } else {
@@ -50,7 +54,7 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
 
 
 
-
+        //Check if the player won the game
         if (scores[activePlayer] >= winningscore) {
             document.querySelector('#name-' + activePlayer).textContent = '--WINNER!--';
             document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner')
@@ -59,8 +63,11 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
             document.querySelector('#dice2').style.display = 'none'
             gameplaying = false
 
+        } else {
+            //next player
+            nextPlayer()
         }
-        nextPlayer()
+
     }
 })
 
