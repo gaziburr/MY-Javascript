@@ -3,7 +3,6 @@ var person = function(name, yearOfBirth, job, calculateRetired) {
     this.name = name;
     this.yearOfBirth = yearOfBirth;
     this.job = job;
-
 }
 person.prototype.calculateAge = function(name, yearOfBirth, job, calculateRetired) {
     var age = 2020 - this.yearOfBirth;
@@ -11,9 +10,9 @@ person.prototype.calculateAge = function(name, yearOfBirth, job, calculateRetire
     console.log(2020 - this.yearOfBirth, AgeUntilRetired)
 }
 var Gazibur = new person('Gazibur', 1999, 'teacher', 65);
-var Hifjur = new person('Hifjur', 1989, 'designer', 65)
-var Motibur = new person('Motibur', 1988, 'retired', 65)
-    //None of object have the calculateAge methods really attached to them but still they are going to be able to use it(access) it.because its in their prototype...mr gazibur //
+var Hifjur = new person('Hifjur', 1989, 'designer', 65);
+var Motibur = new person('Motibur', 1988, 'retired', 65);
+//None of object have the calculateAge methods really attached to them but still they are going to be able to use it(access) it.because its in their prototype...mr gazibur //
 Gazibur.calculateAge();
 Hifjur.calculateAge();
 Motibur.calculateAge();
