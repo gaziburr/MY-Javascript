@@ -7,11 +7,12 @@ var Gazibur = {
     familyAges: [], //This array is filled by callback function(function as an arguement) below
     pensiontime: [],
     Job: "student",
-    isMarried: false
+    isMarried: []
 };
 // call back function
+
 function age(arr, fn) {
-    var ages = Gazibur.familyAges;
+    let ages = Gazibur.familyAges;
     for (var i = 0; i < arr.length; i++) {
         ages.push(fn(arr[i]));
     }
@@ -22,19 +23,22 @@ function familyage(el) {
     var age = 2020 - el;
     return age;
 }
+var bornyear = Gazibur.familyBirthYear
+age(bornyear, familyage);
 
-function age(arr, fn) {
-    var pension = Gazibur.pensiontime;
+function pensionyear(arr, fn) {
+    var pensionAge = Gazibur.pensiontime
     for (var i = 0; i < arr.length; i++) {
-        pension.push(fn(arr[i]));
+        pensionAge.push(fn(arr[i]));
     }
-    return pension;
+    return pensionAge;
 }
 
-function pension(el) {
-    var pensionyear = 60 - el;
-    return pensionyear;
+function pension(index) {
+    var cal = 60 - index;
+    return cal;
 }
-age(Gazibur.familyBirthYear, familyage);
-age(Gazibur.pensiontime, pension);
-console.table(Gazibur);
+var ages = Gazibur.familyAges
+pensionyear(ages, pension);
+console.log(Gazibur.pensiontime)
+console.table(Gazibur)
