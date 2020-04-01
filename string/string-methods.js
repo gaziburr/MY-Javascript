@@ -39,5 +39,5 @@ console.log(stringTwo.toLowerCase());
 // toUpperCase()
 console.log(stringTwo.toUpperCase());
 // trim()
-var stringThree = "    Subscribe now!    ";
+var stringThree = "Subscribe now!";
 console.log(stringThree.trim());

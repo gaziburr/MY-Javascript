@@ -20,9 +20,6 @@
          7. Calculate the average tip
          for each family .8.Log to the console that which family paid the highest tips on average.
  */
-
-
-
 var Gazibur = {
     fullName: 'Gazibur Rahman',
     bills: [124, 48, 268, 180, 42],
@@ -33,7 +30,6 @@ var Gazibur = {
             // determine the percentage based on tipping rules
             var percentage;
             var bill = this.bills[i];
-
             if (bill < 50) {
                 percentage = .2;
             } else if (bill >= 50 && bill < 200) {
@@ -41,20 +37,14 @@ var Gazibur = {
             } else {
                 percentage = .1
             }
-
             // Add results to the corresponding arrays
-
             this.tips[i] = bill * percentage;
             this.finalValues[i] = bill + this.tips[i];
-
         }
     }
 }
-
 Gazibur.calcTips();
 console.log(Gazibur)
-
-
 
 var Junaid = {
     fullName: 'Junaid',
@@ -74,15 +64,11 @@ var Junaid = {
             } else {
                 percentage = .25;
             }
-
             // Add results to the corresponding arrays
-
             this.tips[i] = bill * percentage;
             this.finalValues[i] = bill + this.tips[i];
-
         }
     }
-
 }
 
 function calcAverage(tips) {
@@ -92,7 +78,6 @@ function calcAverage(tips) {
     }
     return sum / tips.length;
 }
-
 Gazibur.calcTips();
 Junaid.calcTips();
 console.log(Gazibur, Junaid)

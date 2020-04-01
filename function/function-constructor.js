@@ -14,12 +14,12 @@ var Hifjur = new person('Hifjur', 1989, 'designer', 65);
 var Motibur = new person('Motibur', 1988, 'retired', 65);
 //None of object have the calculateAge methods really attached to them but still they are going to be able to use it(access) it.because its in their prototype...mr gazibur //
 Gazibur.calculateAge();
-Hifjur.calculateAge();
+Hifjur.calculateAge()
 Motibur.calculateAge();
 //Now three object has all the property of function constructor(person), because of their prototype, lets prove it:-
 var lastname = person.prototype.lastName = 'Rahman'; //let the last name of three man is rahman Then--
-console.log(Gazibur.lastName, )
-console.log(Gazibur.lastName, )
+console.log(Gazibur.lastName)
+console.log(Gazibur.lastName)
 console.log(Motibur.lastName)
     //lastname property is inherited to three of the objects!..because of their prototype
     //we already know that calling function creates a new cxcecution context.above this variable

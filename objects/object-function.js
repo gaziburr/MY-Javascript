@@ -10,7 +10,7 @@ let otherBook = {
 }
 let getSummary = function(book) {
     return {
-        summary: `${book.title} by ${book.author}`,
+        summary: `${book.title} by ${book.author}`, //(`${}  ${}`) Is the process to access string and defined value together
 
         pageCountSummary: `${book.title} and ${book.pageCount} pages long`
     }
@@ -18,8 +18,7 @@ let getSummary = function(book) {
 let bookSummary = getSummary(myBook)
 let otherBookSummary = getSummary(otherBook)
 console.log(bookSummary.pageCountSummary)
-
-// chanllange area bro
+    // chanllange area bro
 let convertFahrengeit = function(fahrenheit) {
     return {
         fahrenheit: fahrenheit,
@@ -27,17 +26,9 @@ let convertFahrengeit = function(fahrenheit) {
         celcius: (fahrenheit - 32) * (5 / 9)
     }
 }
-
 temp = convertFahrengeit(74)
 console.log(temp)
-
-
-
-
-
-
-
-
+    //Another Example below
 let oneBook = {
     title: 'oneTwo',
     author: 'junaid mustafa',
@@ -53,11 +44,8 @@ let getsummary = function(book) {
     return {
         MyBookSummary: `name ${book.title} , and author ${book.author}  ,and also page is ${book.pageCount}`,
         otherBookSummary: `name ${book.title} , and author ${book.author}  ,and also page is ${book.pageCount}`,
-
-
     }
 }
-
 getsummary(oneBook)
 getsummary(twoBook)
 
