@@ -15,5 +15,5 @@ var designerQuestion = interviewQuestion('designer')
 teacherQuestion('Gazibur')
 designerQuestion('Junaid')
 designerQuestion('nargis')
-interviewQuestion('teacher')('nargis') // It is also work Because when  interviewQuestion(job))is return a function then returned function will called with next arguement. in this case gazibur...
+interviewQuestion('teacher')('nargis') // It is also work Because when  interviewQuestion(job))is return a function, then returned function will called with next arguement. in this case gazibur...
     //It is Recomended that try your won fuction and do some experiments with new concept first class function

@@ -1,4 +1,4 @@
-var Name = 'gazibur rahman'
+ar Name = 'gazibur rahman'
 var job = 'driver'
 switch (job) {
     case 'teacher':

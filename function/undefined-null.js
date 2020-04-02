@@ -1,4 +1,5 @@
 // undefined for variable
+// when the variable is declared but is not defined then the variable is called undefined / * /
 let name = 'jen'
 if (name === undefined) {
     console.log('please provide a name')
@@ -13,5 +14,7 @@ let result = square()
 console.log(result)
     //  null as assigned value
 let age = 27
-age = null
+age = null //nothing exist//
 console.log(age)
+var one
+console.log(one)
