@@ -47,13 +47,31 @@ c) correct answer (( I would use a number for this))
     var q1 = new Question('Is JavaScript the coolest programming language in the world?', ['Yes', 'No'],
         0);
 
-    var q2 = new Question('What is the name of this course\'s teacher?', ['John', 'Micheal', 'Jonas'],
-        2);
+    var q2 = new Question('What is the name of the name of our country?', ['Australia', 'America', 'India'], 2);
 
-    var q3 = new Question('What does best describe coding?', ['Boring', 'Hard', 'Fun', 'Tediuos'],
-        2);
+    var q3 = new Question('What is the best food of indian people ?', ['banana', 'Milk', 'Roti', 'Rice'],
+        3);
 
-    var questions = [q1, q2, q3];
+
+    var q4 = new Question('when was Gazibur born ?', [1900, 1999, 1939],
+        1);
+
+    var q5 = new Question('What is the name of the capital of assam?', ['dispur', 'guwahati', 'None of above'],
+        0);
+
+    var q6 = new Question('The color of sky is ?', ['blue', 'Green', 'yellow', 'white'],
+        0);
+
+    var q7 = new Question('what is the secret of our universe ', ['Kindness', 'Inhumane'],
+        0);
+
+    var q8 = new Question('We should code daily at least 3 hours a day ', ['Yes ', 'No'],
+        0);
+
+
+
+
+    var questions = [q1, q2, q3, q4, q5, q6, q7, q8];
 
     function score() {
         var sc = 0;
