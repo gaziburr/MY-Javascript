@@ -21,7 +21,6 @@ c) correct answer (( I would use a number for this))
     }
     Question.prototype.displayQuestion = function() {
         console.log(this.question);
-
         for (var i = 0; i < this.answers.length; i++) {
             console.log(i + ': ' + this.answers[i]);
         }

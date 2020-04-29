@@ -15,13 +15,19 @@ var emily = {
     age: 35,
     job: 'designer'
 }
+var Remim = {
+    name: 'Remim',
+    age: 16,
+    job: 'student'
+}
 Gazibur.presentation('Formal', 'Morning')
-Gazibur.presentation.call(emily, 'Formal', 'Morning') //Here is call methods  change the 'this' variable of Gazibur.presentation function to  emily . and that is the power of call methods. Gazibur ///
-var Gaziburfriendly = Gazibur.presentation.bind(Gazibur, 'frindly');
-Gaziburfriendly('Morning')
-Gaziburfriendly('Night')
-var emilyFormal = Gazibur.presentation.bind(emily, 'formal');
-emilyFormal('Afternoon')
+Gazibur.presentation.call(emily, 'Formal', 'Morning') 
+Gazibur.presentation.call(Gazibur, 'Formal', 'Afternoon') 
+Gazibur.presentation.call( emily, [ 'friendly', 'afternoon' ] ) 
+
+//Here is call methods  change the 'this' variable of Gazibur.presentation function to  emily . and that is the power of call methods. Gazibur ///
+var Gaziburfriendly = Gazibur.presentation.bind(Gazibur,'Formal');
+Gaziburfriendly('Afternoon')
 
 
 //HERE is another Exapmle:-- Gazibur
