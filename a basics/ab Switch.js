@@ -1,4 +1,25 @@
-ar Name = 'gazibur rahman'
+
+/*****************************
+* The Ternary Operator and Switch Statements
+*/
+
+var firstName = 'John';
+var age = 14;
+
+// Ternary operator:--This simply replace one conditional if else statement.
+age >= 18 ? console.log(firstName + ' drinks beer.') : console.log(firstName + ' drinks juice.');
+
+if (age >= 18) {
+    var drink = 'beer';
+} else {
+    var drink = 'juice';
+}
+//above code can simply replaced by ternery operator.
+var drink = age >= 18 ? 'beer' : 'juice';
+console.log(drink);
+
+// Switch statement :This simply replace multiple conditional if else statement.
+var Name = 'gazibur rahman'
 var job = 'driver'
 switch (job) {
     case 'teacher':

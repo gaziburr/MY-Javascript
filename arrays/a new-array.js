@@ -21,4 +21,4 @@ console.log(John.indexOf(1990))
 
 
 var isDesigner = John.indexOf('designer') === -1 ? 'John is not a designer' : 'John is a designer';
-console.log(isDesigner) i
+console.log(isDesigner) 
