@@ -27,7 +27,7 @@ var Junaid = {
     },
     language: 'english'
 }
-console.log(Junaid.calcBMI)
+console.log(Junaid.calcBMI())
 console.log(Gazibur.calcBMI(), Junaid.calcBMI());
 console.log(Gazibur.BMI, Junaid.BMI);
 Junaid.calcBMI();

@@ -9,7 +9,7 @@ names[names.length] = 'Mary';
 console.log(names);
 
 // differents data types
-var John = ['John', 'Smith', 1990, teacher, false, 'designer'];
+var John = ['John', 'Smith', 1990, 'teacher', false, 'designer'];
 John.push('blue');
 John.unshift('Mr');
 John.pop();

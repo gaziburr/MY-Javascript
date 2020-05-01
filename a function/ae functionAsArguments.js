@@ -17,8 +17,8 @@ function isFullAges(el) {
     return el >= 18
 }
 var FullAge = arraycalc(years, isFullAges)
-console.log(ages)
-console.log(FullAge) //both are same
+console.table(ages)
+console.table(FullAge) //both are same
     /* Our arrcalc funtion loops through the years array five temes and five times the calculateAge function  was called(returned) and push the result right into the arrRes empty array*/
 function maxheartrate(el) {
     if (el >= 18 && el <= 81) {
@@ -28,4 +28,4 @@ function maxheartrate(el) {
     }
 }
 var rates = arraycalc(ages, maxheartrate)
-console.log(rates)
+console.table(rates)

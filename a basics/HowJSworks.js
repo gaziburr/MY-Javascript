@@ -76,7 +76,6 @@ function third() {
 /////////////////////////////////////
 // Lecture: The this keyword
 
-/*
 //console.log(this);
 
 calculateAge(1985);

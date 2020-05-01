@@ -80,8 +80,8 @@ if (temp = false) {
 
 }
 // challange area 
-let age = 6
-if (age <= 7) {
+let age1 = 6
+if (age1 <= 7) {
     console.log('you will get a child discount')
 }
 
@@ -89,7 +89,7 @@ if (age <= 7) {
 /*****************************
 * Truthy and Falsy values and equality operators
 */
-/*
+
 // falsy values: undefined, null, 0, '', NaN
 // truthy values: NOT falsy values
 

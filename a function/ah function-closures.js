@@ -11,10 +11,11 @@ var retirementIndia = retirement(60)
 var retirementGermany = retirement(65)
 retirementUs(1990)
 retirementGermany(1995)
-retirementIceland(1999)
+
     // closures summary:
     //An inner function has aloways access to the variables and parameters of its outer function, even ofter the outer function is returned.
-    //Previous Example can be done by this Function closuresfunction interviewQuestion(job) {
+    //Previous Example can be done by this Function closures
+function interviewQuestion(job) {
 return function(name) {
     if (job === 'designer') {
         console.log(name + ' , can you please explain that what UX design is?');
@@ -23,6 +24,7 @@ return function(name) {
     } else {
         console.log('hello' + name + 'what do you do?')
     }
+  }
 }
 var teacherQuestion = interviewQuestion('teacher')
 var designerQuestion = interviewQuestion('designer')
