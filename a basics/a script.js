@@ -1,27 +1,28 @@
 ///* Variables and datatypes */
 var firstName = 'John';
-console.log(firstName);
+console.log(firstName);//John//
 
 var lastName = 'Smith';
 var age = 28;
 
 var fullAge = true;
-console.log(fullAge);
+console.log(fullAge);//true//
 
 var job;
-console.log(job);
+console.log(job);//undefined//
 
 job = 'Teacher';
-console.log(job);
+console.log(job);//Teacher//
 
 // Variable naming rules
 var _3years = 3;
 var johnMark = 'John and MArk';
 // var if = 23;
+/*
 
 
 
-
+console.log(" ")//
 
 
 /*****************************
@@ -32,13 +33,13 @@ var firstName = 'John';
 var age = 28;
 
 // Type coercion
-console.log(firstName + ' ' + age);
+console.log(firstName + ' ' + age);//John 28//
 
 var job, isMarried;
 job = 'teacher';
 isMarried = false;
 
-console.log(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried);
+console.log(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried);//John is a 28 year old teacher. Is he married? false//
 
 // Variable mutation
 age = 'twenty eight';
@@ -47,9 +48,10 @@ job = 'driver';
 alert(firstName + ' is a ' + age + ' year old ' + job + '. Is he married? ' + isMarried);
 
 var lastName = prompt('What is his last Name?');
-console.log(firstName + ' ' + lastName);
+console.log(firstName + ' ' + lastName);//John //
 
 
+console.log(" ")//
 
 
 
@@ -66,27 +68,28 @@ ageMark = 33;
 yearJohn = now - ageJohn;
 yeahMark = now - ageMark;
 
-console.log(yearJohn);
+console.log(yearJohn);//1990//
 
-console.log(now + 2);
-console.log(now * 2);
-console.log(now / 10);
+console.log(now + 2);//2020//
+console.log(now * 2);////4036
+console.log(now / 10);//201.8
 
 
 // Logical operators
 var johnOlder = ageJohn < ageMark;
-console.log(johnOlder);
+console.log(johnOlder);//true
 
 
 // typeof operator
-console.log(typeof johnOlder);
-console.log(typeof ageJohn);
-console.log(typeof 'Mark is older tha John');
+console.log(typeof johnOlder);//boolean
+console.log(typeof ageJohn);//number
+console.log(typeof 'Mark is older tha John');//string
 var x;
-console.log(typeof x);
+console.log(typeof x);//undefined
 
 
 
+console.log(" ")//
 
 
 /*****************************
@@ -99,31 +102,32 @@ var fullAge = 18;
 
 // Multiple operators
 var isFullAge = now - yearJohn >= fullAge; // true
-console.log(isFullAge);
+console.log(isFullAge);//true
 
 // Grouping
 var ageJohn = now - yearJohn;
 var ageMark = 35;
 var average = (ageJohn + ageMark) / 2;
-console.log(average);
+console.log(average);//32
 
 // Multiple assignments
 var x, y;
 x = y = (3 + 5) * 4 - 6; // 8 * 4 - 6 // 32 - 6 // 26
-console.log(x, y);
+console.log(x, y);//26 26
 
 
 // More operators
 x *= 2;
-console.log(x);
+console.log(x);//52
 x += 10;
-console.log(x);
+console.log(x);//62
 x--;
-console.log(x);
+console.log(x);//61
 
 
 
 
+console.log(" ")//
 
 
 /*****************************
@@ -142,9 +146,6 @@ GOOD LUCK 😀
 */
 
 
-
-
-
 var massMark = 78; // kg
 var heightMark = 1.69; // meters
 
@@ -153,14 +154,16 @@ var heightJohn = 1.95;
 
 var BMIMark = massMark / (heightMark * heightMark);
 var BMIJohn = massJohn / (heightJohn * heightJohn);
-console.log(BMIMark, BMIJohn);
+console.log(BMIMark, BMIJohn);//27.309968138370508 24.194608809993426
 
 var markHigherBMI = BMIMark > BMIJohn;
-console.log('Is Mark\'s BMI higher than John\'s? ' + markHigherBMI);
+console.log('Is Mark\'s BMI higher than John\'s? ' + markHigherBMI);//Is Mark's BMI higher than John's? true
 
 
 
 
+
+console.log(" ")//
 
 
 /*****************************
@@ -171,17 +174,18 @@ var firstName = 'John';
 var civilStatus = 'single';
 
 if (civilStatus === 'married') {
-    console.log(firstName + ' is married!');
+    console.log(firstName + ' is married!');//
 } else {
-    console.log(firstName + ' will hopefully marry soon :)');
+    console.log(firstName + ' will hopefully marry soon :)');////John will hopefully marry soon :)
 }
+
 
 
 var isMarried = true;
 if (isMarried) {
-    console.log(firstName + ' is married!');
+    console.log(firstName + ' is married!');//John is married!
 } else {
-    console.log(firstName + ' will hopefully marry soon :)');
+    console.log(firstName + ' will hopefully marry soon :)');//
 }
 
 var massMark = 78; // kg
@@ -194,13 +198,16 @@ var BMIMark = massMark / (heightMark * heightMark);
 var BMIJohn = massJohn / (heightJohn * heightJohn);
 
 if (BMIMark > BMIJohn) {
-    console.log('Mark\'s BMI is higher than John\'s.');
+    console.log('Mark\'s BMI is higher than John\'s.');//Mark's BMI is higher than John's.
+
 } else {
-    console.log('John\'s BMI is higher than Marks\'s.');
+    console.log('John\'s BMI is higher than Marks\'s.');//
 }
 
 
 
+
+console.log(" ")//
 
 
 
@@ -212,18 +219,18 @@ var firstName = 'John';
 var age = 20;
 
 if (age < 13) {
-    console.log(firstName + ' is a boy.');
+    console.log(firstName + ' is a boy.');//
 } else if (age >= 13 && age < 20) {
-    console.log(firstName + ' is a teenager.');
+    console.log(firstName + ' is a teenager.');//
 } else if (age >= 20 && age < 30) {
-    console.log(firstName + ' is a young man.');
+    console.log(firstName + ' is a young man.');//John is a young man.
 } else {
-    console.log(firstName + ' is a man.');
+    console.log(firstName + ' is a man.');//
 }
 
 
 
-
+console.log(" ")//
 
 /*****************************
 * The Ternary Operator and Switch Statements
@@ -231,12 +238,11 @@ if (age < 13) {
 
 var firstName = 'John';
 var age = 14;
-
 // Ternary operator
-age >= 18 ? console.log(firstName + ' drinks beer.') : console.log(firstName + ' drinks juice.');
+age >= 18 ? console.log(firstName + ' drinks beer.') : console.log(firstName + ' drinks juice.');//John drinks juice.
 
 var drink = age >= 18 ? 'beer' : 'juice';
-console.log(drink);
+console.log(drink);//juice
 
 if (age >= 18) {
     var drink = 'beer';
@@ -249,35 +255,34 @@ var job = 'instructor';
 switch (job) {
     case 'teacher':
     case 'instructor':
-        console.log(firstName + ' teaches kids how to code.');
+        console.log(firstName + ' teaches kids how to code.');//John teaches kids how to code.
         break;
     case 'driver':
-        console.log(firstName + ' drives an uber in Lisbon.');
+        console.log(firstName + ' drives an uber in Lisbon.');//
         break;
     case 'designer':
-        console.log(firstName + ' designs beautiful websites.');
+        console.log(firstName + ' designs beautiful websites.');//
         break;
     default:
-        console.log(firstName + ' does something else.');
+        console.log(firstName + ' does something else.');//
 }
 
 age = 56;
 switch (true) {
     case age < 13:
-        console.log(firstName + ' is a boy.');
+        console.log(firstName + ' is a boy.');//
         break;
     case age >= 13 && age < 20:
-        console.log(firstName + ' is a teenager.');
+        console.log(firstName + ' is a teenager.');//
         break;
     case age >= 20 && age < 30:
-        console.log(firstName + ' is a young man.');
+        console.log(firstName + ' is a young man.');//
         break;
     default:
-        console.log(firstName + ' is a man.');
+        console.log(firstName + ' is a man.');//John is a man.
 }
 
-
-
+console.log(" ")//
 
 
 
@@ -293,14 +298,14 @@ var height;
 height = 23;
 
 if (height || height === 0) {
-    console.log('Variable is defined');
+    console.log('Variable is defined');//Variable is defined
 } else {
-    console.log('Variable has NOT been defined');
+    console.log('Variable has NOT been defined');//
 }
 
 // Equality operators
 if (height === '23') {
-    console.log('The == operator does type coercion!');
+    console.log('The == operator does type coercion!');//
 }
 
 
@@ -318,7 +323,7 @@ John and Mike both play basketball in different teams. In the latest 3 games, Jo
 2. Decide which teams wins in average (highest average score), and print the winner to the console. Also include the average score in the output.
 3. Then change the scores to show different winners. Don't forget to take into account there might be a draw (the same average score)
 
-4. EXTRA: Mary also plays basketball, and her team scored 97, 134 and 105 points. Like before, log the average winner to the console. HINT: you will need the && operator to take the decision. If you can't solve this one, just watch the solution, it's no problem :)
+4. EXTRA: Mary also plays basketball, and her team scored 97, 134 and 105 points. Like before, log the average winner to the console. HINT: you will need the && operator to take the decision. If you can't solve this one, just watch the solution, it's no problem :)//
 5. Like before, change the scores to generate different winners, keeping in mind there might be draws.
 
 GOOD LUCK 😀
@@ -331,32 +336,32 @@ GOOD LUCK 😀
 var scoreJohn = (189 + 120 + 103) / 3;
 var scoreMike = (129 + 94 + 123) / 3;
 var scoreMary = (97 + 134 + 105) / 3;
-console.log(scoreJohn, scoreMike, scoreMary);
+console.log(scoreJohn, scoreMike, scoreMary);//137.33333333333334 115.33333333333333 112
 
 if (scoreJohn > scoreMike && scoreJohn > scoreMary) {
-    console.log('John\'s team wins with ' + scoreJohn + ' points');
+    console.log('John\'s team wins with ' + scoreJohn + ' points');//John's team wins with 137.33333333333334 points
 } else if (scoreMike > scoreJohn && scoreMike > scoreMary) {
-    console.log('Mike\'s team wins with ' + scoreMike + ' points');
+    console.log('Mike\'s team wins with ' + scoreMike + ' points');//
 } else if (scoreMary > scoreJohn && scoreMary > scoreMike) {
-    console.log('Mary\'s team wins with ' + scoreMary + ' points');
+    console.log('Mary\'s team wins with ' + scoreMary + ' points');//
 } else {
-    console.log('There is a draw');
+    console.log('There is a draw');//
 }
 
 
 if (scoreJohn > scoreMike) {
-    console.log('John\'s team wins with ' + scoreJohn + ' points');
+    console.log('John\'s team wins with ' + scoreJohn + ' points');//John's team wins with 137.33333333333334 points
 } else if (scoreMike > scoreJohn) {
-    console.log('Mike\'s team wins with ' + scoreMike + ' points');
+    console.log('Mike\'s team wins with ' + scoreMike + ' points');//
 } else {
-    console.log('There is a draw');
+    console.log('There is a draw');//
 }
 
 
 
 
 
-
+console.log(" ")//
 /*****************************
 * Functions
 */
@@ -368,7 +373,7 @@ function calculateAge(birthYear) {
 var ageJohn = calculateAge(1990);
 var ageMike = calculateAge(1948);
 var ageJane = calculateAge(1969);
-console.log(ageJohn, ageMike, ageJane);
+console.log(ageJohn, ageMike, ageJane);//26 68 47
 
 
 function yearsUntilRetirement(year, firstName) {
@@ -376,22 +381,20 @@ function yearsUntilRetirement(year, firstName) {
     var retirement = 65 - age;
 
     if (retirement > 0) {
-        console.log(firstName + ' retires in ' + retirement + ' years.');
+        console.log(firstName + ' retires in ' + retirement + ' years.');//John retires in 39 years.
     } else {
-        console.log(firstName + ' is already retired.')
+        console.log(firstName + ' is already retired.')//Mike is already retired.
     }
 
 }
 
-yearsUntilRetirement(1990, 'John');
-yearsUntilRetirement(1948, 'Mike');
-yearsUntilRetirement(1969, 'Jane');
+yearsUntilRetirement(1990, 'John');//  John retires in 39 years.
+yearsUntilRetirement(1948, 'Mike');// Mike is already retired.
+yearsUntilRetirement(1969, 'Jane');// Jane retires in 18 years.
 
 
 
-
-
-
+console.log(" ")//
 /*****************************
 * Function Statements and Expressions
 */
@@ -413,14 +416,14 @@ var whatDoYouDo = function (job, firstName) {
     }
 }
 
-console.log(whatDoYouDo('teacher', 'John'));
-console.log(whatDoYouDo('designer', 'Jane'));
-console.log(whatDoYouDo('retired', 'Mark'));
+console.log(whatDoYouDo('teacher', 'John'));//John teaches kids how to code
+console.log(whatDoYouDo('designer', 'Jane'));//Jane designs beautiful websites
+console.log(whatDoYouDo('retired', 'Mark'));//Mark does something else
 
 
 
 
-
+console.log(" ")//
 
 /*****************************
 * Arrays
@@ -430,36 +433,36 @@ console.log(whatDoYouDo('retired', 'Mark'));
 var names = ['John', 'Mark', 'Jane'];
 var years = new Array(1990, 1969, 1948);
 
-console.log(names[2]);
-console.log(names.length);
+console.log(names[2]);//Jane
+console.log(names.length);//3
 
 // Mutate array data
 names[1] = 'Ben';
 names[names.length] = 'Mary';
-console.log(names);
+console.log(names);//Array(4)0: "John"1: "Ben"2: "Jane"3: "Mary"length: 4__proto__: Array(0)
 
 // Different data types
 var john = ['John', 'Smith', 1990, 'designer', false];
 
 john.push('blue');
 john.unshift('Mr.');
-console.log(john);
+console.log(john);//Array(4)0: "John"1: "Smith"2: 19903: "designer"length: 4__proto__: Array(0)
 
 john.pop();
 john.pop();
 john.shift();
-console.log(john);
+console.log(john);//Array(4)0: "John"1: "Smith"2: 19903: "designer"length: 4__proto__: Array(0)
 
-console.log(john.indexOf(23));
+console.log(john.indexOf(23));//-1
 
 var isDesigner = john.indexOf('designer') === -1 ? 'John is NOT a designer' : 'John IS a designer';
-console.log(isDesigner);
+console.log(isDesigner);//John IS a designer
 
 
 
 
 
-
+console.log(" ")//
 /*****************************
 * CODING CHALLENGE 3
 */
@@ -502,13 +505,13 @@ var finalValues = [bills[0] + tips[0],
 bills[1] + tips[1],
 bills[2] + tips[2]];
 
-console.log(tips, finalValues);
+console.log(tips, finalValues);//Array(3)0: 18.5999999999999981: 9.6000000000000012: 26.8length: 3__proto__: Array(0) Array(3)0: 142.61: 57.62: 294.8length: 3__proto__: Array(0)
 
 
 
 
 
-
+console.log(" ")//
 /*****************************
 * Objects and properties
 */
@@ -523,27 +526,33 @@ var john = {
     isMarried: false
 };
 
-console.log(john.firstName);
-console.log(john['lastName']);
+console.log(john.firstName);//John
+console.log(john['lastName']);//Smith
 var x = 'birthYear';
-console.log(john[x]);
+console.log(john[x]);//1990
 
 john.job = 'designer';
 john['isMarried'] = true;
-console.log(john);
+console.log(john);/* Object
+firstName: "John"
+lastName: "Smith"
+birthYear: 1990
+family: (4) ["Jane", "Mark", "Bob", "Emily"]
+job: "designer"
+isMarried: true
+__proto__: Object */
 
 // new Object syntax
 var jane = new Object();
 jane.firstName = 'Jane';
 jane.birthYear = 1969;
 jane['lastName'] = 'Smith';
-console.log(jane);
+console.log(jane);//{firstName: "Jane", birthYear: 1969, lastName: "Smith"}
 
 
 
 
-
-
+console.log(" ")//
 
 /*****************************
 * Objects and methods
@@ -562,12 +571,13 @@ var john = {
 };
 
 john.calcAge();
-console.log(john);
+console.log(john);//{firstName: "John", lastName: "Smith", birthYear: 1992, family: Array(4), job: "teacher", …}firstName: "John"lastName: "Smith"birthYear: 1992family: (4) ["Jane", "Mark", "Bob", "Emily"]job: "teacher"isMarried: falsecalcAge: ƒ ()age: 26__proto__: Object
 
 
 
 
 
+console.log(" ")//
 
 /*****************************
 * CODING CHALLENGE 4
@@ -577,16 +587,12 @@ console.log(john);
 Let's remember the first coding challenge where Mark and John compared their BMIs. Let's now implement the same functionality with objects and methods.
 1. For each of them, create an object with properties for their full name, mass, and height
 2. Then, add a method to each object to calculate the BMI. Save the BMI to the object and also return it from the method.
-3. In the end, log to the console who has the highest BMI, together with the full name and the respective BMI. Don't forget they might have the same BMI.
+3. In the end, log to the console who has the highest BMI, together with the full name and the respective BMI. Don't forget they might have the same BMI.//
 
 Remember: BMI = mass / height^2 = mass / (height * height). (mass in kg and height in meter).
 
 GOOD LUCK 😀
 */
-
-
-
-
 
 
 var john = {
@@ -610,18 +616,18 @@ var mark = {
 }
 
 if (john.calcBMI() > mark.calcBMI()) {
-    console.log(john.fullName + ' has a higher BMI of ' + john.bmi);
+    console.log(john.fullName + ' has a higher BMI of ' + john.bmi);//
 } else if (mark.bmi > john.bmi) {
-    console.log(mark.fullName + ' has a higher BMI of ' + mark.bmi);
+    console.log(mark.fullName + ' has a higher BMI of ' + mark.bmi);//
 } else {
-    console.log('They have the same BMI');
+    console.log('They have the same BMI');//
 }
 
 
 
 
 
-
+console.log("")//
 
 /*****************************
 * Loops and iteration
@@ -630,25 +636,25 @@ if (john.calcBMI() > mark.calcBMI()) {
 
 // for loop
 for (var i = 1; i <= 20; i += 2) {
-    console.log(i);
+    console.log(i);//1 to 19
 }
 
-// i = 0, 0 < 10 true, log i to console, i++
-// i = 1, 1 < 10 true, log i to the console, i++
+// i = 0, 0 < 10 true, log i to console, i++//
+// i = 1, 1 < 10 true, log i to the console, i++//
 //...
-// i = 9, 9 < 10 true, log i to the console, i++
+// i = 9, 9 < 10 true, log i to the console, i++//
 // i = 10, 10 < 10 FALSE, exit the loop!
 
 
 var john = ['John', 'Smith', 1990, 'designer', false, 'blue'];
 for (var i = 0; i < john.length; i++) {
-    console.log(john[i]);
+    console.log(john[i]);//John Smith 1990 designer false blue
 }
 
 // While loop
 var i = 0;
 while (i < john.length) {
-    console.log(john[i]);
+    console.log(john[i]);//'John Smith 1990 designer false blue
     i++;
 }
 
@@ -658,23 +664,23 @@ var john = ['John', 'Smith', 1990, 'designer', false, 'blue'];
 
 for (var i = 0; i < john.length; i++) {
     if (typeof john[i] !== 'string') continue;
-    console.log(john[i]);
+    console.log(john[i]);//John Smith  designer   blue
 }
 
 for (var i = 0; i < john.length; i++) {
     if (typeof john[i] !== 'string') break;
-    console.log(john[i]);
+    console.log(john[i]);//John Smith 
 }
 
 // Looping backwards
 for (var i = john.length - 1; i >= 0; i--) {
-    console.log(john[i]);
+    console.log(john[i]);// blue false designer 1990 Smith John
 }
 
 
 
 
-
+console.log(" ")//
 
 
 /*****************************
@@ -704,10 +710,6 @@ Mark likes to tip 20% of the bill when the bill is less than $100, 10% when the 
 
 GOOD LUCK 😀
 */
-
-
-
-
 
 
 var john = {
@@ -778,18 +780,15 @@ mark.calcTips();
 
 john.average = calcAverage(john.tips);
 mark.average = calcAverage(mark.tips);
-console.log(john, mark);
-
+console.log(john, mark);/* {fullName: "John Smith", bills: Array(5), tips: Array(5), finalValues: Array(5), calcTips: ƒ, …}
+fullName: "John Smith"bills: (5) [124, 48, 268, 180, 42]calcTips: ƒ ()tips: (5) [18.599999999999998, 9.600000000000001, 26.8, 27, 8.4]finalValues: (5) [142.6, 57.6, 294.8, 207, 50.4]average: 18.080000000000002__proto__: Object  */
 if (john.average > mark.average) {
-    console.log(john.fullName + '\'s family pays higher tips, with an average of $' + john.average);
+    console.log(john.fullName + '\'s family pays higher tips, with an average of $' + john.average);//
 } else if (mark.average > john.average) {
-    console.log(mark.fullName + '\'s family pays higher tips, with an average of $' + mark.average);
+    console.log(mark.fullName + '\'s family pays higher tips, with an average of $' + mark.average);//Mark Miller's family pays higher tips, with an average of $38.5375
 }
 
-
-
-
-
+console.log(" ")//
 
 /////////////////////////////
 // Lecture: Function constructor
@@ -807,7 +806,7 @@ var Person = function (name, yearOfBirth, job) {
 }
 
 Person.prototype.calculateAge = function () {
-    console.log(2016 - this.yearOfBirth);
+    console.log(2016 - this.yearOfBirth);//26 47 68
 };
 
 Person.prototype.lastName = 'Smith';
@@ -816,26 +815,22 @@ var john = new Person('John', 1990, 'teacher');
 var jane = new Person('Jane', 1969, 'designer');
 var mark = new Person('Mark', 1948, 'retired');
 
-john.calculateAge();
-jane.calculateAge();
-mark.calculateAge();
+john.calculateAge();//26
+jane.calculateAge();//47
+mark.calculateAge();//68
 
-console.log(john.lastName);
-console.log(jane.lastName);
-console.log(mark.lastName);
-
-
+console.log(john.lastName);//Smith
+console.log(jane.lastName);//Smith
+console.log(mark.lastName);//Smith
 
 
-
-
-
+console.log(" ")//
 /////////////////////////////
 // Lecture: Object.create
 
 var personProto = {
     calculateAge: function () {
-        console.log(2016 - this.yearOfBirth);
+        console.log(2016 - this.yearOfBirth);//26
     }
 };
 
@@ -843,14 +838,14 @@ var john = Object.create(personProto);
 john.name = 'John';
 john.yearOfBirth = 1990;
 john.job = 'teacher';
+console.log(john.calculateAge())//undefined
 
 var jane = Object.create(personProto, {
     name: { value: 'Jane' },
     yearOfBirth: { value: 1969 },
     job: { value: 'designer' }
 });
-
-
+console.log(" ")//
 
 
 
@@ -862,8 +857,8 @@ var jane = Object.create(personProto, {
 var a = 23;
 var b = a;
 a = 46;
-console.log(a);
-console.log(b);
+console.log(a);//46
+console.log(b);//23
 
 
 
@@ -874,8 +869,8 @@ var obj3 = {
 };
 var obj2 = obj3;
 obj3.age = 30;
-console.log(obj3.age);
-console.log(obj2.age);
+console.log(obj3.age);//30
+console.log(obj2.age);//30
 
 // Functions
 var age = 27;
@@ -891,38 +886,9 @@ function change(a, b) {
 
 change(age, obj3);
 
-console.log(age);
-console.log(obj3.city);
-/* var years = [1990, 1965, 1937, 2005, 1998, 1994];
-function arrayCalc(arr, fn) {
-    var arrRes = [];
-    for (var i = 0; i < arr.length; i++) {
-        arrRes.push(fn(arr[i]))
-    }
-    return arrRes;
-}
-function calculateAge(el) {
-    return 2016 - el //you can suppose anything you want(el)
-}
-var ages = arrayCalc(years, calculateAge)
-console.table(ages)
-
-function isFullAges(el) {
-    return el >= 18
-}
-var FullAge = arrayCalc(years, isFullAges)
-console.table(FullAge)
-
-function maxheartrate(el) {
-    if (el >= 18 && el <= 81) {
-        return Math.round(206.9 - (0.67 * el))
-    } else {
-        return -1;
-    }
-}
-var rates = arrayCalc(ages, maxheartrate)
-console.table(rates) */
-
+console.log(age);//27
+console.log(obj3.city);//San Francisco
+console.log(" ")//
 
 var years = [1990, 1965, 1937, 2005, 1998, 1994];
 function arrayCalc(arr, fn) {
@@ -931,37 +897,21 @@ function arrayCalc(arr, fn) {
         arrRes.push(fn(arr[i]))
     }
     return arrRes;
-}/*  var years = [1990, 1965, 1937, 2005, 1998, 1994];
-function arrayCalc(arr, fn) {
-    var arrRes = [];
-    for (var i = 0; i < arr.length; i++) {
-        arrRes.push(fn(arr[i]))
-    }
-    return arrRes;
-} */
+}
 function calculateAge(el) {
     return 2016 - el //you can suppose anything you want(el)
 }
 var ages = arrayCalc(years, calculateAge)
-console.table(ages)
-/*
-function calculateAge(el) {
-    return 2016 - el //you can suppose anything you want(el)
-}
-var ages = arrayCalc(years, calculateAge)
-console.table(ages)
- */
+console.log(ages)//(6) [26, 51, 79, 11, 18, 22]
+
+
 function isFullAges(el) {
     return el >= 18
 }
 var FullAge = arrayCalc(years, isFullAges)
-console.table(FullAge)
-/*
-function isFullAges(el) {
-    return el >= 18
-}
-var FullAge = arrayCalc(years, isFullAges)
-console.table(FullAge) */
+console.log(FullAge)//(6) [true, true, true, true, true, true]
+
+
 
 function maxHeartRate(el) {
     if (el >= 18 && el <= 81) {
@@ -970,60 +920,31 @@ function maxHeartRate(el) {
         return -1;
     }
 }
-/*
-function maxheartrate(el) {
-    if (el >= 18 && el <= 81) {
-        return Math.round(206.9 - (0.67 * el))
-    } else {
-        return -1;
-    }
-}
-var rates = arrayCalc(ages, maxheartrate)
-console.table(rates)  */
+
 var rates = arrayCalc(ages, maxHeartRate);
-console.log(rates)
-/* var years = [1990, 1965, 1937, 2005, 1998, 1994];
+console.log(rates)//(6) [189, 173, 154, -1, 195, 192]
 
-function arraycalc(arr, fn) {
-    var arrRes = [];
-    for (var i = 0; i < arr.length; i++) {
-        arrRes.push(fn(arr[i]))
-    }
-    return arrRes;
-}
-
-function calculateAge(el) {
-    return 2016 - el //you can suppose anything you want(el)
-}
-var ages = arraycalc(years, calculateAge)
-    //we dont want to call a funtion here but want to call later by another arraycalc function and thats why its(calculateAge) called a callback function,aggain because of  its called later mr gazibur .
-function isFullAges(el) {
-    return el >= 18
-}
-var FullAge = arraycalc(years, isFullAges)
-console.table(ages)
-console.table(FullAge) //both are same
-    /* Our arrcalc funtion loops through the years array five temes and five times the calculateAge function  was called(returned) and push the result right into the arrRes empty array*/
-
+console.log(" ")//
 /////////////////////////////
 // Lecture: Functions returning functions
 
 function interviewQuestion(job) {
-    if (job === 'designer') {
-        return function (name) {
-            console.log(name + ', can you please explain what UX design is?');
-        }
-    } else if (job === 'teacher') {
-        return function (name) {
-            console.log('What subject do you teach, ' + name + '?');
-        }
-    } else {
-        return function (name) {
-            console.log('Hello ' + name + ', what do you do?');
+    return function (name) {
+        if (job === 'designer') {
+            console.log(name + ', can you please explain what UX design is?');/* What subject do you teach, John? ,
+            John, can you please explain what UX design is? ,
+            jane, can you please explain what UX design is? ,
+            Mark, can you please explain what UX design is? ,
+            */
+        } else if (job === 'teacher') {
+            console.log('What subject do you teach, ' + name + '?');/* //What subject do you teach, Mark?,          What subject do you teach, Mark? */
+        } else {
+            console.log('Hello ' + name + ', what do you do?');//
         }
     }
 }
 
+interviewQuestion('teacher')('John');
 var teacherQuestion = interviewQuestion('teacher');
 var designerQuestion = interviewQuestion('designer');
 
@@ -1033,44 +954,38 @@ designerQuestion('John');
 designerQuestion('jane');
 designerQuestion('Mark');
 designerQuestion('Mike');
-
+interviewQuestion('teacher')('John');
 interviewQuestion('teacher')('Mark');
 
 
-
-
-
-
+console.log(" ")//
 
 /////////////////////////////
 // Lecture: IIFE
 
 function game() {
     var score = Math.random() * 10;
-    console.log(score >= 5);
+    console.log(score >= 5);//false
 }
 game();
 
 
 (function () {
     var score = Math.random() * 10;
-    console.log(score >= 5);
+    console.log(score >= 5);//false
 })();
 
-//console.log(score);
+//console.log(score);//error
 
 
 (function (goodLuck) {
     var score = Math.random() * 10;
-    console.log(score >= 5 - goodLuck);
+    console.log(score >= 5 - goodLuck);//true
 })(5);
 
 
 
-
-
-
-
+console.log(" ")//
 
 /////////////////////////////
 // Lecture: Closures
@@ -1079,7 +994,10 @@ function retirement(retirementAge) {
     var a = ' years left until retirement.';
     return function (yearOfBirth) {
         var age = 2016 - yearOfBirth;
-        console.log((retirementAge - age) + a);
+        console.log((retirementAge - age) + a);//
+        /* 39 years left until retirement.
+        40 years left until retirement. 
+        41 years left until retirement. */
     }
 }
 
@@ -1094,25 +1012,9 @@ retirementIceland(1990);
 //retirement(66)(1990);
 
 
-function interviewQuestion(job) {
-    return function (name) {
-        if (job === 'designer') {
-            console.log(name + ', can you please explain what UX design is?');
-        } else if (job === 'teacher') {
-            console.log('What subject do you teach, ' + name + '?');
-        } else {
-            console.log('Hello ' + name + ', what do you do?');
-        }
-    }
-}
-
-interviewQuestion('teacher')('John');
 
 
-
-
-
-
+console.log(" ")//
 
 
 /////////////////////////////
@@ -1124,13 +1026,15 @@ var john = {
     job: 'teacher',
     presentation: function (style, timeOfDay) {
         if (style === 'formal') {
-            console.log('Good ' + timeOfDay + ', Ladies and gentlemen! I\'m ' + this.name + ', I\'m a ' + this.job + ' and I\'m ' + this.age + ' years old.');
+            console.log('Good ' + timeOfDay + ', Ladies and gentlemen! I\'m ' + this.name + ', I\'m a ' + this.job + ' and I\'m ' + this.age + ' years old.');/* //Good morning, Ladies and gentlemen! I'm John, I'm a teacher and I'm 26 years old.
+            Good afternoon, Ladies and gentlemen! I'm Emily, I'm a designer and I'm 35 years old. */
         } else if (style === 'friendly') {
-            console.log('Hey! What\'s up? I\'m ' + this.name + ', I\'m a ' + this.job + ' and I\'m ' + this.age + ' years old. Have a nice ' + timeOfDay + '.');
+            console.log('Hey! What\'s up? I\'m ' + this.name + ', I\'m a ' + this.job + ' and I\'m ' + this.age + ' years old. Have a nice ' + timeOfDay + '.');/* 
+            Hey! What's up? I'm Emily, I'm a designer and I'm 35 years old. Have a nice afternoon. //Hey! What's up? I'm John, I'm a teacher and I'm 26 years old. Have a nice night.
+            Hey! What's up? I'm John, I'm a teacher and I'm 26 years old. Have a nice morning. */
         }
     }
 };
-
 var emily = {
     name: 'Emily',
     age: 35,
@@ -1151,6 +1055,7 @@ johnFriendly('night');
 var emilyFormal = john.presentation.bind(emily, 'formal');
 emilyFormal('afternoon');
 
+console.log(" ")//
 /////////////////////////////////
 // Lecture: let and const
 
@@ -1159,26 +1064,26 @@ emilyFormal('afternoon');
 var name5 = 'Jane Smith';
 var age5 = 23;
 name5 = 'Jane Miller';
-console.log(name5);
+console.log(name5);//Jane Miller
 
 // ES6
 const name6 = 'Jane Smith';
 let age6 = 23;
 // name6 = 'Jane Miller';
-console.log(name6);
+console.log(name6);//Jane Smith
 
 
 // ES5
 function driversLicence5(passedTest) {
 
     if (passedTest) {
-        console.log(firstName);
+        console.log(firstName);//undefined
         var firstName = 'John';
         var yearOfBirth = 1990;
     }
 
 
-    console.log(firstName + ', born in ' + yearOfBirth + ', is now officially allowed to drive a car.');
+    console.log(firstName + ', born in ' + yearOfBirth + ', is now officially allowed to drive a car.');//
 }
 
 driversLicence5(true);
@@ -1187,7 +1092,7 @@ driversLicence5(true);
 // ES6
 function driversLicence6(passedTest) {
 
-    //console.log(firstName);
+    //console.log(firstName);//
     let firstName;
     const yearOfBirth = 1990;
 
@@ -1195,7 +1100,7 @@ function driversLicence6(passedTest) {
         firstName = 'John';
     }
 
-    console.log(firstName + ', born in ' + yearOfBirth + ', is now officially allowed to drive a car.');
+    console.log(firstName + ', born in ' + yearOfBirth + ', is now officially allowed to drive a car.');//
 }
 
 driversLicence6(true);
@@ -1205,15 +1110,13 @@ driversLicence6(true);
 var i = 23;
 
 for (var i = 0; i < 5; i++) {
-    console.log(i);
+    console.log(i);//0 to 4
 }
 
-console.log(i);
+console.log(i);//5
 
 
-
-
-
+console.log(" ")//
 
 
 /////////////////////////////////
@@ -1227,8 +1130,8 @@ console.log(i);
     var c = 3;
 }
 
-//console.log(a + b);
-console.log(c);
+//console.log(a + b);//
+console.log(c);//3
 
 
 // ES5
@@ -1236,14 +1139,11 @@ console.log(c);
     var c = 3;
 })();
 
-//console.log(c);
+//console.log(c);//
 
 
 
-
-
-
-
+console.log(" ")//
 
 /////////////////////////////////
 // Lecture: Strings
@@ -1258,23 +1158,20 @@ function calcAge(year) {
 }
 
 // ES5
-console.log('This is ' + firstname1 + ' ' + lastname1 + '. He was born in ' + yearOfBirth + '. Today, he is ' + calcAge(yearOfBirth) + ' years old.');
+console.log('This is ' + firstname1 + ' ' + lastname1 + '. He was born in ' + yearOfBirth + '. Today, he is ' + calcAge(yearOfBirth) + ' years old.');//This is John Smith. He was born in 1990. Today, he is 26 years old.
 
 // ES6
-console.log(`This is ${firstname1} ${lastname1}. He was born in ${yearOfBirth}. Today, he is ${calcAge(yearOfBirth)} years old.`);
+console.log(`This is ${firstname1} ${lastname1}. He was born in ${yearOfBirth}. Today, he is ${calcAge(yearOfBirth)} years old.`);//This is John Smith. He was born in 1990. Today, he is 26 years old.
 
 
 const n = `${firstname1} ${lastname1}`;
-console.log(n.startsWith('j'));
-console.log(n.endsWith('Sm'));
-console.log(n.includes('oh'));
-console.log(`${firstname1} `.repeat(5));
+console.log(n.startsWith('j'));//false
+console.log(n.endsWith('Sm'));//false
+console.log(n.includes('oh'));//true
+console.log(`${firstname1} `.repeat(5));//John John John John John 
 
 
-
-
-
-
+console.log(" ")//
 
 /////////////////////////////////
 // Lecture: Arrow functions
@@ -1286,28 +1183,25 @@ const years1 = [1990, 1965, 1982, 1937];
 var ages5 = years1.map(function (el) {
     return 2016 - el;
 });
-console.log(ages5);
+console.log(ages5);//(4) [26, 51, 34, 79]
 
 
 // ES6
 let ages6 = years1.map(el => 2016 - el);
-console.log(ages6);
+console.log(ages6);//(4) [26, 51, 34, 79]
 
 ages6 = years1.map((el, index) => `Age element ${index + 1}: ${2016 - el}.`);
-console.log(ages6);
+console.log(ages6);//(4) ["Age element 1: 26.", "Age element 2: 51.", "Age element 3: 34.", "Age element 4: 79."]
 
 ages6 = years1.map((el, index) => {
     const now = new Date().getFullYear();
     const age = now - el;
     return `Age element ${index + 1}: ${age}.`
 });
-console.log(ages6);
+console.log(ages6);//(4) ["Age element 1: 30.", "Age element 2: 55.", "Age element 3: 38.", "Age element 4: 83."]
 
 
-
-
-
-
+console.log(" ")//
 
 /////////////////////////////////
 // Lecture: Arrow functions 2
@@ -1366,7 +1260,7 @@ Person.prototype.myFriends5 = function (friends) {
         return this.name + ' is friends with ' + el;
     }.bind(this));
 
-    console.log(arr);
+    console.log(arr);//(3) ["John is friends with Bob", "John is friends with Jane", "John is friends with Mark"]
 }
 
 var friends = ['Bob', 'Jane', 'Mark'];
@@ -1378,13 +1272,13 @@ Person.prototype.myFriends6 = function (friends) {
 
     var arr = friends.map(el => `${this.name} is friends with ${el}`);
 
-    console.log(arr);
+    console.log(arr);//(3) ["Mike is friends with Bob", "Mike is friends with Jane", "Mike is friends with Mark"]
 }
 
 new Person('Mike').myFriends6(friends);
 
 
-
+console.log(" ")//
 
 
 
@@ -1393,46 +1287,33 @@ new Person('Mike').myFriends6(friends);
 
 
 // ES5
-var john = ['John', 26];
-//var name = john[0];
-//var age = john[1];
-
-
+var Gazi = ['Gaziburr', 26];
+//var name = Gazi[0];
+//var age = Gazi[1];
 // ES6
-const [name, age1] = ['John', 26];
-console.log(name);
-console.log(age1);
-
-const obj1 = {
-    firstName: 'John',
-    lastName: 'Smith'
+const [Name, Age] = ['Gaziburr', 26];
+console.log(Name); //Gaziburr
+console.log(Age);//26
+const OBJ = {
+    FirstName: 'Gaziburr',
+    LastName: 'Rahman'
 };
-
-const { firstName2, lastName2 } = obj1;
-console.log(firstName2);
-console.log(lastName2);
-
-const { firstName2: a1, lastName2: b1 } = obj1;
-console.log(a1);
-console.log(b1);
-
-
-
+const {FirstName, LastName} = OBJ;
+console.log(FirstName); //Gaziburr
+console.log(LastName);//Rahman
+const {FirstName: A, LastName: B} = OBJ;
+console.log(A);//Gaziburr
+console.log(B);// Rahman
 function calcAgeRetirement(year) {
-    const age1 = new Date().getFullYear() - year;
-    return [age1, 65 - age1];
+    const Age = new Date().getFullYear() - year;
+    return [Age, 65 - Age];
 }
+const [age2, Retirement] = calcAgeRetirement(1990);
+console.log(age2);//30
+console.log(Retirement);//35
+  
 
-
-const [age2, retirement1] = calcAgeRetirement(1990);
-console.log(age2);
-console.log(retirement1);
-
-
-
-
-
-
+console.log(" ")//
 
 /////////////////////////////////
 // Lecture: Arrays
@@ -1472,30 +1353,25 @@ for (const cur of boxesArr6) {
 }
 
 
-
-
 //ES5
 var ages = [12, 17, 8, 21, 14, 11];
 
 var full = ages.map(function (cur) {
     return cur >= 18;
 });
-console.log(full);
+console.log(full);//(6) [false, false, false, true, false, false]
 
-console.log(full.indexOf(true));
-console.log(ages[full.indexOf(true)]);
+console.log(full.indexOf(true));//3
+console.log(ages[full.indexOf(true)]);//21
 
 
 //ES6
-console.log(ages.findIndex(cur => cur >= 18));
-console.log(ages.find(cur => cur >= 18));
+console.log(ages.findIndex(cur => cur >= 18));//3
+console.log(ages.find(cur => cur >= 18));//21
 
 
 
-
-
-
-
+console.log(" ")//
 
 
 
@@ -1508,22 +1384,22 @@ function addFourAges(a, b, c, d) {
 }
 
 var sum1 = addFourAges(18, 30, 12, 21);
-console.log(sum1);
+console.log(sum1);//81
 
 //ES5
 var ages = [18, 30, 12, 21];
 var sum2 = addFourAges.apply(null, ages);
-console.log(sum2);
+console.log(sum2);//81
 
 //ES6
 const sum3 = addFourAges(...ages);
-console.log(sum3);
+console.log(sum3);//81
 
 
 const familySmith = ['John', 'Jane', 'Mark'];
 const familyMiller = ['Mary', 'Bob', 'Ann'];
 const bigFamily = [...familySmith, 'Lily', ...familyMiller];
-console.log(bigFamily);
+console.log(bigFamily);//(7) ["John", "Jane", "Mark", "Lily", "Mary", "Bob", "Ann"]
 
 
 const h = document.querySelector('h1');
@@ -1532,12 +1408,7 @@ const all = [h, ...boxes1];
 
 // Array.from(all).forEach(cur => cur.style.color = 'purple');
 
-
-
-
-
-
-
+console.log(" ")//
 
 
 
@@ -1547,11 +1418,11 @@ const all = [h, ...boxes1];
 
 //ES5
 function isFullAge5() {
-    //console.log(arguments);
+    //console.log(arguments);//
     var argsArr = Array.prototype.slice.call(arguments);
 
     argsArr.forEach(function (cur) {
-        console.log((2016 - cur) >= 18);
+        console.log((2016 - cur) >= 18);//
     })
 }
 
@@ -1562,7 +1433,7 @@ function isFullAge5() {
 
 //ES6
 function isFullAge6(...years) {
-    years.forEach(cur => console.log((2016 - cur) >= 18));
+    years.forEach(cur => console.log((2016 - cur) >= 18));//
 }
 
 isFullAge6(1990, 1999, 1965, 2016, 1987);
@@ -1573,7 +1444,7 @@ function isFullAge5(limit) {
     var argsArr = Array.prototype.slice.call(arguments, 1);
 
     argsArr.forEach(function (cur) {
-        console.log((2016 - cur) >= limit);
+        console.log((2016 - cur) >= limit);//false
     })
 }
 
@@ -1584,7 +1455,7 @@ isFullAge5(1990, 1999, 1965, 2016, 1987);
 
 //ES6
 function isFullAge6(limit, ...years) {
-    years.forEach(cur => console.log((2016 - cur) >= limit));
+    years.forEach(cur => console.log((2016 - cur) >= limit));//false true false true
 }
 
 isFullAge6(16, 1990, 1999, 1965, 2016, 1987);
@@ -1593,7 +1464,7 @@ isFullAge6(16, 1990, 1999, 1965, 2016, 1987);
 
 
 
-
+console.log(" ")//
 
 /////////////////////////////////
 // Lecture: Default parameters
@@ -1624,15 +1495,12 @@ function SmithPerson(firstName2, yearOfBirth, lastName2 = 'Smith', nationality =
 var john = new SmithPerson('John', 1990);
 var emily = new SmithPerson('Emily', 1983, 'Diaz', 'spanish');
 
-
-
-
+console.log(" ")//
 
 
 
 /////////////////////////////////
 // Lecture: Maps
-
 
 const question = new Map();
 question.set('question', 'What is the official name of the latest major JavaScript version?');
@@ -1644,36 +1512,31 @@ question.set('correct', 3);
 question.set(true, 'Correct answer :D');
 question.set(false, 'Wrong, please try again!');
 
-console.log(question.get('question'));
-//console.log(question.size);
+console.log(question.get('question'));//What is the official name of the latest major JavaScript version?
+//console.log(question.size);//
 
 
 if (question.has(4)) {
     //question.delete(4);
-    //console.log('Answer 4 is here')
+    //console.log('Answer 4 is here')//
 }
 
 //question.clear();
 
 
-//question.forEach((value, key) => console.log(`This is ${key}, and it's set to ${value}`));
+//question.forEach((value, key) => console.log(`This is ${key}, and it's set to ${value}`));//
 
 
 for (let [key, value] of question.entries()) {
     if (typeof (key) === 'number') {
-        console.log(`Answer ${key}: ${value}`);
+        console.log(`Answer ${key}: ${value}`);//Answer 1: ES5    Answer 2: ES6    Answer 3: ES2015    Answer 4: ES7
     }
 }
 
 const ans = parseInt(prompt('Write the correct answer'));
-console.log(question.get(ans === question.get('correct')));
+console.log(question.get(ans === question.get('correct')));//Wrong, please try again!
 
-
-
-
-
-
-
+console.log(" ")//
 
 
 
@@ -1690,7 +1553,7 @@ var Person5 = function (name, yearOfBirth, job) {
 
 Person5.prototype.calculateAge = function () {
     var age = new Date().getFullYear - this.yearOfBirth;
-    console.log(age);
+    console.log(age);//
 }
 
 var john5 = new Person5('John', 1990, 'teacher');
@@ -1705,11 +1568,11 @@ class Person6 {
 
     calculateAge() {
         var age = new Date().getFullYear - this.yearOfBirth;
-        console.log(age);
+        console.log(age);//
     }
 
     static greeting() {
-        console.log('Hey there!');
+        console.log('Hey there!');//Hey there!
     }
 }
 
@@ -1717,17 +1580,12 @@ const john6 = new Person6('John', 1990, 'teacher');
 
 Person6.greeting();
 
-
-
-
-
-
+console.log(" ")//
 
 
 
 /////////////////////////////////
 // Lecture: Classes and subclasses
-
 
 //ES5
 var Person5 = function (name, yearOfBirth, job) {
@@ -1738,7 +1596,7 @@ var Person5 = function (name, yearOfBirth, job) {
 
 Person5.prototype.calculateAge = function () {
     var age = new Date().getFullYear() - this.yearOfBirth;
-    console.log(age);
+    console.log(age);//30
 }
 
 var Athlete5 = function (name, yearOfBirth, job, olymicGames, medals) {
@@ -1752,7 +1610,7 @@ Athlete5.prototype = Object.create(Person5.prototype);
 
 Athlete5.prototype.wonMedal = function () {
     this.medals++;
-    console.log(this.medals);
+    console.log(this.medals);//11
 }
 
 
@@ -1772,7 +1630,7 @@ class person7 {
 
     calculateAge() {
         var age = new Date().getFullYear() - this.yearOfBirth;
-        console.log(age);
+        console.log(age);//30
     }
 }
 
@@ -1785,7 +1643,7 @@ class Athlete6 extends person7 {
 
     wonMedal() {
         this.medals++;
-        console.log(this.medals);
+        console.log(this.medals);//11
     }
 }
 
@@ -1794,13 +1652,7 @@ const johnAthlete6 = new Athlete6('John', 1990, 'swimmer', 3, 10);
 johnAthlete6.wonMedal();
 johnAthlete6.calculateAge();
 
-
-
-
-
-
-
-
+console.log(" ")//
 
 /////////////////////////////////
 // CODING CHALLENGE
@@ -1826,23 +1678,12 @@ HINT: Use some of the ES6 features: classes, subclasses, template strings, defau
 
 */
 
-
-
-
-
-
-
-
-
-
-
 class Element {
     constructor(name, buildYear) {
         this.name = name;
         this.buildYear = buildYear;
     }
 }
-
 
 class Park extends Element {
     constructor(name, buildYear, area, numTrees) {
@@ -1853,7 +1694,9 @@ class Park extends Element {
 
     treeDensity() {
         const density = this.numTrees / this.area;
-        console.log(`${this.name} has a tree density of ${density} trees per square km.`);
+        console.log(`${this.name} has a tree density of ${density} trees per square km.`);/* //Green Park has a tree density of 1075 trees per square km.
+        National Park has a tree density of 1221.0344827586207 trees per square km.
+        Oak Park has a tree density of 2372.5 trees per square km. */
     }
 }
 
@@ -1872,7 +1715,10 @@ class Street extends Element {
         classification.set(3, 'normal');
         classification.set(4, 'big');
         classification.set(5, 'huge');
-        console.log(`${this.name}, build in ${this.buildYear}, is a ${classification.get(this.size)} street.`);
+        console.log(`${this.name}, build in ${this.buildYear}, is a ${classification.get(this.size)} street.`);/* Ocean Avenue, build in 1999, is a big street.
+        1718 Evergreen Street, build in 2008, is a small street.
+        1718 4th Street, build in 2015, is a normal street.
+        1718 Sunset Boulevard, build in 1982, is a huge street. */
     }
 }
 
@@ -1898,7 +1744,7 @@ function calc(arr) {
 
 function reportParks(p) {
 
-    console.log('-----PARKS REPORT-----');
+    console.log('-----PARKS REPORT-----');//-----PARKS REPORT-----
 
     // Density
     p.forEach(el => el.treeDensity());
@@ -1906,22 +1752,22 @@ function reportParks(p) {
     // Average age
     const ages = p.map(el => new Date().getFullYear() - el.buildYear);
     const [totalAge, avgAge] = calc(ages);
-    console.log(`Our ${p.length} parks have an average of ${avgAge} years.`);
+    console.log(`Our ${p.length} parks have an average of ${avgAge} years.`);//Our 3 parks have an average of 75.33333333333333 years.
 
     // Which park has more than 1000 trees
     const i = p.map(el => el.numTrees).findIndex(el => el >= 1000);
-    console.log(`${p[i].name} has more than 1000 trees.`);
+    console.log(`${p[i].name} has more than 1000 trees.`);//National Park has more than 1000 trees.
 
 }
 
 
 function reportStreets(s) {
 
-    console.log('-----STREETS REPORT-----');
+    console.log('-----STREETS REPORT-----');//-----STREETS REPORT-----
 
     //Total and average length of the town's streets
     const [totalLength, avgLength] = calc(s.map(el => el.length));
-    console.log(`Our ${s.length} streets have a total length of ${totalLength} km, with an average of ${avgLength} km.`);
+    console.log(`Our ${s.length} streets have a total length of ${totalLength} km, with an average of ${avgLength} km.`);//Our 4 streets have a total length of 7.1000000000000005 km, with an average of 1.7750000000000001 km.
 
     // CLassify sizes
     s.forEach(el => el.classifyStreet());
@@ -1933,13 +1779,10 @@ reportStreets(allStreets);
 
 for (var i = 0; i < john.length; i++) {
     if (typeof john[i] !== 'string') break;
-    console.log(john[i]);
+    console.log(john[i]);//
 }
 
 // Looping backwards
 for (var i = john.length - 1; i >= 0; i--) {
-    console.log(john[i]);
-}
-
-
-
+    console.log(john[i]);//
+};

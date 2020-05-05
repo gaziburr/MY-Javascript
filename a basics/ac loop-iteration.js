@@ -37,3 +37,34 @@ for (var i = newArray.length - 1; i >= 0; i--) {
 
 
 // index number =length-1   (in an array)  Remember Mr Gazibur Rahman:)
+
+
+/////////////////////////////////
+// Lecture: Destructuring
+
+
+// ES5
+var Gazi = ['Gaziburr', 26];
+//var name = Gazi[0];
+//var age = Gazi[1];
+// ES6
+const [Name, Age] = ['Gaziburr', 26];
+console.log(Name); //Gaziburr
+console.log(Age);//26
+const OBJ = {
+    FirstName: 'Gaziburr',
+    LastName: 'Rahman'
+};
+const {FirstName, LastName} = OBJ;
+console.log(FirstName); //Gaziburr
+console.log(LastName);//Rahman
+const {FirstName: a, LastName: b} = OBJ;
+console.log(a);//Gaziburr
+console.log(b);// Rahman
+function calcAgeRetirement(year) {
+    const Age = new Date().getFullYear() - year;
+    return [Age, 65 - Age];
+}
+const [age2, retirement] = calcAgeRetirement(1990);
+console.log(age2);//30
+console.log(retirement);//35
